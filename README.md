@@ -1,6 +1,7 @@
 # Stochastic Programming
 ##  Problem Statement: Formulate a Stochastic Program that would determine the seat assignment, while maximizing the profit
-Northam Airlines is trying to decide how to partition a new plane for its Chicago-Detroit route. The plane can seat 200 economy class passengers. A section can be partitioned off for first class seats but each of these seats takes the space of 2 economy class seats. A business class section can also be included, but each of these seats takes as much space as 1.5 economy class seats.
+Northam Airlines is trying to decide how to partition a new plane for its Chicago-Detroit route. The plane can seat 200 economy class passengers. A section can be partitioned off for first class seats but each of these seats takes the space of 2 economy class seats. A business class section can also be included, but each of these seats takes as much space as 1.5 economy class seats. \
+
 The profit on a first class ticket is, however, three times the profit of an economy class ticket. A business class ticket has a profit of two times an economy ticket’s profit.
 Once the airplane is partitioned into these seating classes, it cannot be changed. Northam knows, however, that the plane will not always be full in each section.
 They have decided that three scenarios will occur with about the same frequency: weekday morning and evening traffic
