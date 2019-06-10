@@ -10,18 +10,21 @@ os.chdir('/Users/shrilekha/Documents/Fall 2018/Operations Research')
 
 
 # Scenario 1 
-# Initilize the ratio of profit
+# Initilize the ratio of profit of all three classes
 profit=[1,2,3]
 
+# Space ratio for all three classes
 space = [1,1.5,2]
 
+# Maximum ticket which they can sell
 Seating = [200,50,20]
 
 # Initiate the model
 m = Model("Case_1")
 m.update()
 
-# Define Decision Variables
+# Define Decision Variables, x0 represents the number of seat allocated for the economy class, x1 represents the 
+# seats allocated for business class and x2 represents the seat allocated for 1st class seat.
 x={}
 for i in range(3):
  x[i] = m.addVar(vtype = GRB.CONTINUOUS, name = "y%d" %i)
