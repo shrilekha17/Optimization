@@ -6,6 +6,7 @@ The profit on a first class ticket is, however, three times the profit of an eco
 * weekday morning and evening traffic
 * weekend traffic
 * weekday midday traffic
+
 Under Scenario 1, they think they can sell as many as 20 first class tickets, 50 business class tickets, 200 economy tickets. Under scenario 2, these figures are 10, 25, 175. Under scenario 3, they are 5, 10, and 150.
 I am assuming that they cannot sell more tickets than seats in each of the sections.(In reality , the company may allow overbooking, then it faces the problem of passengers with reservations who do not appear for the flight (no-shows). The problem of determining how many passengers to accept is part of the field called yield management. 
 Our goal is to formulate a Stochastic Program that would determine the seat assignment, while maximizing the profit.
