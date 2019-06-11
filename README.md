@@ -19,7 +19,7 @@ Our goal is to formulate a Stochastic Program that would determine the seat assi
 * [Including all three scenarios](https://github.com/shrilekha17/Optimization/blob/master/Stochastic_Model_Final.py)
 
 ## Discussion 
-It will be equivalent to a simple linear program where we need to seat allocation while maximizing the profit. But, under some uncertainties, it won't remain the same problem. In my solution, I have considered that all three events are occurring with 1/3 probability. Considering uncertainties, Considering uncertainties, 
+It will be equivalent to a simple linear program where we need to seat allocation while maximizing the profit. But, under some uncertainties, it won't remain the same problem. In my solution, I have considered that all three events are occurring with 1/3 probability. Considering uncertainties, 
 the maximum profit is 208.33 units. The seat allocated in economy class are 150, in business class are 20, and in first class are 10. 
 
 
