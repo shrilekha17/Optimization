@@ -28,7 +28,9 @@ m.update()
 x={}
 for i in range(3):
  x[i] = m.addVar(vtype = GRB.CONTINUOUS, name = "y%d" %i)
- 
+
+ # Let s0 be the seats which were not sold in Economy class. s1 be the seats not sold in Business class & s2 be the 
+ # seats not sold in 1st class
 s={}
 for i in range(3):
  s[i] = m.addVar(vtype = GRB.CONTINUOUS, name = "s%d" %i) 
@@ -64,9 +66,9 @@ for v in m.getVars():
 # Total_Profit = 245
 
 # Total_Profit = 245
-# y0 = 85
-# y1 = 50
-# y2 = 20
+# x0 = 85
+# x1 = 50
+# x2 = 20
  
 
 
