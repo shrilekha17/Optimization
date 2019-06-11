@@ -26,11 +26,15 @@ m.update()
 
 #Define decision variables
 
+# Define Decision Variables, x0 represents the number of seat allocated for the economy class, x1 represents the 
+# seats allocated for business class and x2 represents the seat allocated for 1st class seat.
+
 x={}
 for i in range(3):
     x[i]=m.addVar(vtype = GRB.CONTINUOUS, name = "x%d" %i)
 
-
+ # Let s0 be the seats which were not sold in Economy class. s1 be the seats not sold in Business class & s2 be the 
+ # seats not sold in 1st class
 s={}
 for i in range(3):   #use only first two elements of the Products
    for j in range(3):
@@ -41,6 +45,8 @@ m.update()
 # Objective Function
 Total_Profit = quicksum((x[i]-s[i,j])*profit[i] for i in range(3) for j in range(3))
 
+# It is given that there is equal probability of occuring of all three events. Therefore, divide it by 3
+
 Total_Profit = Total_Profit/3
 
 m.setObjective(Total_Profit,GRB.MAXIMIZE)
@@ -49,18 +55,23 @@ m.setObjective(Total_Profit,GRB.MAXIMIZE)
 # Constraints Addition
 
 # First Stage Constriants 
+#Seat constraint
 m.addConstr(quicksum(x[i]*Space[i] for i in range(3))<=200)
 for i in range(3):
     m.addConstr(x[i]>=0)
 
 # Second stage constraints
+#Selling constraint under scenario 1
 for j in range(3):
     for i in range(3):
         m.addConstr(x[i] - s[i,j] <= Seating[i][j])
         
+# Selling constraint under scenario 2        
 for j in range(3):
     for i in range(3):
         m.addConstr(s[i,j]>=0)
+        
+ # Selling constraint under scenario 3       
 
 for j in range(3):
     for i in range(3):
@@ -86,4 +97,5 @@ for v in m.getVars():
 # x2 = 10
 # s1_2 = 10
 # s2_2 = 5
+
 
