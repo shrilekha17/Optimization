@@ -21,10 +21,15 @@ m = Model("Case_1")
 m.update()
 
 # Define Decision Variables
+
+# Define Decision Variables, x0 represents the number of seat allocated for the economy class, x1 represents the 
+# seats allocated for business class and x2 represents the seat allocated for 1st class seat.
 x={}
 for i in range(3):
  x[i] = m.addVar(vtype = GRB.CONTINUOUS, name = "y%d" %i)
- 
+
+ # Let s0 be the seats which were not sold in Economy class. s1 be the seats not sold in Business class & s2 be the 
+ # seats not sold in 1st class
 s={}
 for i in range(3):
  s[i] = m.addVar(vtype = GRB.CONTINUOUS, name = "s%d" %i) 
