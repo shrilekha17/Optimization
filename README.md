@@ -11,8 +11,11 @@ Under Scenario 1, they think they can sell as many as 20 first class tickets, 50
 I am assuming that they cannot sell more tickets than seats in each of the sections.(In reality , the company may allow overbooking, then it faces the problem of passengers with reservations who do not appear for the flight (no-shows). The problem of determining how many passengers to accept is part of the field called yield management. 
 Our goal is to formulate a Stochastic Program that would determine the seat assignment, while maximizing the profit.
 
-## Table of Contents:
+## Seat allocation and maximum profit:
 * [Seat allocation in scenario 1](https://github.com/shrilekha17/Optimization/blob/master/Scenario_1_Final.py)
 * [Seat allocation in scenario 2](https://github.com/shrilekha17/Optimization/blob/master/Scenario_2_Final.py)
 * [Seat allocation in scenario 3](https://github.com/shrilekha17/Optimization/blob/master/Scenario_3_Final.py)
 * [Including all three scenarios](https://github.com/shrilekha17/Optimization/blob/master/Stochastic_Model_Final.py)
+
+# Discussion 
+
