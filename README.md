@@ -17,5 +17,6 @@ Our goal is to formulate a Stochastic Program that would determine the seat assi
 * [Seat allocation in scenario 3](https://github.com/shrilekha17/Optimization/blob/master/Scenario_3_Final.py)
 * [Including all three scenarios](https://github.com/shrilekha17/Optimization/blob/master/Stochastic_Model_Final.py)
 
-# Discussion 
+## Discussion 
+It will be equivalent to a simple linear program where we need to seat allocation while maximizing the profit. But, under some uncertainties, it won't remain the same problem. In my solution, I have considered that all three events are occurring with 1/3 probability.
 
